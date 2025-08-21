@@ -13,6 +13,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 /* common */
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  /* font-style: normal; */
+  font-weight: 700;
+  line-height: 1.27; /* 126.316% */
+  letter-spacing: -0.76px;
+}
 a {
   text-decoration: none;
 }
@@ -251,4 +260,45 @@ a {
 }
 .hero .stats strong:nth-child(2) {
   margin-left: 28px;
+}
+/* popular */
+.popular {
+  padding: 65px 0;
+  /* background-color: blue; */
+  margin-top: 135px;
+}
+.popular-top .desc {
+  margin-top: 16px;
+  width: 458px;
+  color: #5f5b53;
+  /* font-family: Poppins; */
+  font-size: 1.8rem;
+  /* font-style: normal; */
+  /* font-weight: 400; */
+  line-height: 1.67; /* 166.667% */
+}
+.popular-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular-top .control-btn {
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--cl);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--cl);
+}
+.popular-top .controls {
+  display: flex;
+  gap: 18px;
+}
+.popular-top .control-btn:hover {
+  background-color: var(--cl);
+  color: white;
+  cursor: pointer;
 }
