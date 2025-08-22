@@ -46,6 +46,18 @@ a {
   display: inline-block;
   padding: 0 16px;
 }
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+.break-all {
+  word-break: break-all;
+}
 /* header */
 .header {
   background: #fffcf4;
@@ -318,6 +330,7 @@ a {
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
+  flex: 1;
 }
 .popular .course-item:hover {
   border-radius: 12px;
