@@ -215,6 +215,7 @@ a {
 }
 .btn:hover {
   opacity: 0.9;
+  cursor: pointer;
 }
 .hero .watch-video {
   border: none;
@@ -301,4 +302,80 @@ a {
   background-color: var(--cl);
   color: white;
   cursor: pointer;
+}
+.popular .course-list {
+  margin-top: 55px;
+  display: flex;
+  gap: 30px;
+}
+.popular .course-item .thumb {
+  width: 100%;
+  border-radius: 12px 12px 0px 0px;
+  height: 278px;
+  object-fit: cover;
+}
+.popular .course-item {
+  border-radius: 12px;
+  border: 1px solid #e2dfda;
+  background: #fff;
+}
+.popular .course-item:hover {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 18px 36px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+}
+.popular .course-item .info {
+  padding: 16px 22px 22px;
+}
+.popular .course-item .foot,
+.popular .course-item .rating,
+.popular .course-item .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular .course-item .title a {
+  color: #171100;
+  /* font-family: Poppins; */
+  font-size: 1.8rem;
+  /* font-style: normal; */
+  font-weight: 600;
+  line-height: 1.67; /* 166.667% */
+}
+.popular .rating .value {
+  color: #fea31b;
+  /* font-family: Poppins; */
+  font-size: 1.6rem;
+  /* font-style: normal; */
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+  margin-left: 6px;
+}
+.popular .course-item .desc {
+  color: #5f5b53;
+  /* font-family: Poppins; */
+  font-size: 1.4rem;
+  /* font-style: normal; */
+  font-weight: 400;
+  line-height: 1.86; /* 185.714% */
+  margin-top: 6px;
+}
+.popular .course-item .foot {
+  margin-top: 12px;
+}
+.popular .course-item .foot .price {
+  color: #171100;
+  /* font-family: Poppins; */
+  font-size: 1.8rem;
+  /* font-style: normal; */
+  font-weight: 600;
+  line-height: 1.67; /* 166.667% */
+}
+.popular .course-item .btn-book {
+  border: none;
+}
+.popular .course-item .btn-book:hover {
+  background-color: var(--cl);
+  /* cursor: pointer; */
 }
